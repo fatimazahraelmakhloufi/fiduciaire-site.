@@ -33,7 +33,7 @@ function App() {
       setBookingStatus('Envoi en cours...');
       
       try {
-          const response = await fetch('http://localhost:8080/api/appointments', {
+          const response = await fetch('/api/appointments', {
               method: 'POST',
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify(formData)
