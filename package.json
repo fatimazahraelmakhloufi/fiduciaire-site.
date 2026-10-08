@@ -1,7 +1,17 @@
 {
+  "name": "fiduciaire-benhamadi-backend",
+  "version": "1.0.0",
+  "description": "Backend API pour le site Fiduciaire BENHAMADI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "cors": "^2.8.6",
-    "express": "^5.2.1",
-    "nodemailer": "^10.0.16"
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7"
   }
 }
