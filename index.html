@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiduciaire BENHAMADI | Expert-comptable à Casablanca</title>
+    <meta name="description" content="Fiduciaire BENHAMADI, votre partenaire de confiance pour tous vos besoins en matière de comptabilité, de fiscalité et de conseils financiers à Casablanca.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Fiduciaire <span>BENHAMADI</span></div>
+        <div class="nav-links">
+            <a href="#services">Nos Services</a>
+            <a href="#contact">Contact</a>
+            <button class="btn-primary" onclick="openModal()">Réserver une consultation</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>L'Excellence Financière pour votre Entreprise</h1>
+            <p>Forts d'une expérience solide, nous vous accompagnons dans la comptabilité, la fiscalité et le développement de votre société.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary large" onclick="openModal()">Consultation Expert - 300 DHS</button>
+                <a href="#services" class="btn-secondary large">Découvrir nos services</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="services">
+        <h2>Nos Domaines d'Expertise</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon">📊</div>
+                <h3>Comptabilité</h3>
+                <p>Tenue de la comptabilité, déclarations sociales et fiscales, bilans et liasses fiscales.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon">💼</div>
+                <h3>Création d'Entreprise</h3>
+                <p>Accompagnement de A à Z pour le lancement de votre projet avec le meilleur statut juridique.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon">⚖️</div>
+                <h3>Conseil Juridique & Fiscal</h3>
+                <p>Optimisation fiscale, conseils stratégiques et assistance en cas de contrôle.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-content">
+            <div class="footer-section brand">
+                <h3>Fiduciaire <span>BENHAMADI</span></h3>
+                <p>Votre partenaire de confiance pour la comptabilité, la fiscalité et le conseil d'entreprise à Casablanca.</p>
+            </div>
+            <div class="footer-section contact-info">
+                <h4>Contactez-nous</h4>
+                <p>📍 Adresse : Casablanca, Maroc</p>
+                <p>📞 Téléphone : +212 6 XX XX XX XX</p>
+                <p>✉️ Email : contact@fiduciaire-benhamadi.ma</p>
+            </div>
+            <div class="footer-section social">
+                <h4>Suivez-nous</h4>
+                <div class="social-links">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Fiduciaire BENHAMADI. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Réservation -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Réserver une consultation</h2>
+            <p class="price-tag">Tarif : 300 DHS</p>
+            <form id="bookingForm" action="https://formsubmit.co/mehdi123bts@gmail.com" method="POST">
+                <!-- Configuration FormSubmit -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Nouvelle Demande de Consultation (300 DHS)">
+                
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="Nom_du_client" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email du client (pour lui envoyer la confirmation)</label>
+                    <input type="email" id="email" name="Email_du_client" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" name="Telephone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date souhaitée</label>
+                    <input type="date" id="date" name="Date_souhaitee" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Sujet de la consultation (Optionnel)</label>
+                    <textarea id="message" name="Message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn-primary full-width">Envoyer la demande à Mehdi</button>
+            </form>
+            <div id="successMessage" class="hidden">
+                <div class="success-icon">✅</div>
+                <h3>Demande envoyée !</h3>
+                <p>Nous vous contacterons très vite pour confirmer l'heure du rendez-vous.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
