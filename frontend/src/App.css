@@ -138,7 +138,7 @@ body {
 /* HERO SECTION */
 .hero {
     min-height: 80vh;
-    background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url('/office_hero.png') center/cover;
+    background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.8)), url('/hero-bg.jpg') center/cover;
     display: flex;
     align-items: center;
     padding: 0 10%;
